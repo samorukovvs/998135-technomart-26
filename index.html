@@ -9,8 +9,11 @@
 <body>
   <header>
     <p>Техномарт</p>
-    <!--Тут будет поиск -->
-    <p>Поиск:</p>
+
+    <form action="https://echo.htmlacademy.ru" method="post">
+      <label for="search-text">Поиск:</label>
+      <input type="text" id="search-text" name="search-query" value="" placeholder="">
+    </form>
     <a href="">Закладки: 0</a>
     <a href="">Корзина: 0</a>
     <a href="">Оформить заказ</a>
@@ -51,8 +54,21 @@
     <section>
       <h2>Контакты</h2>
       <p>Вы можете забрать товар сами, заехав в наш офис:</p>
-      <a href="maps.yandex.ru"><img src="img/map.jpg" width="300" height="158" alt="Карта как добраться"></a>
-      <a href="mailto:mail@htmlacademy.ru">Заблудились? Напишите нам!</a>
+      <button><img src="img/map.jpg" width="300" height="158" alt="Карта как добраться"></button>
+      <a href="maps.yandex.ru"><img src="img/map-big.jpg" width="970" height="476" alt="Большая карта проезда"></a>
+      <button>Заблудились? Напишите нам!</button>
+    </section>
+    <section>
+      <h2 class="visually-hidden">Обратная связь</h2>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <label for="name-field">Ваше имя:</label>
+        <input id="name-field" type="text" name="firtst-second-name" placeholder="Имя Фамилия">
+        <label for="email-field">Ваш e-mail:</label>
+        <input id="email-field" type="email" name="email" placeholder="email@example.com">
+        <label for="message-field">Текст письма:</label>
+        <input id="message-field" type="text" name="message" placeholder="В свободной форме">
+        <button type="submit">Отправить</button>
+      </form>
     </section>
   </main>
   <footer>
