@@ -9,8 +9,10 @@
 <body>
   <header>
     <a href="index.html">Техномарт</a>
-    <!--Тут будет поиск -->
-    <span>Поиск:</span>
+    <form action="https://echo.htmlacademy.ru" method="get">
+      <label for="search-text">Поиск:</label>
+      <input type="text" id="search-text" name="search-query" value="" placeholder="">
+    </form>
     <a href="">Закладки: 0</a>
     <a href="">Корзина: 0</a>
     <a href="">Оформить заказ</a>
@@ -43,23 +45,47 @@
     <h1>Перфораторы</h1>
     <aside>
       <!-- Блок фильтра по цене -->
-      <!-- Тут будет форма, пока убрал в комментарий
-              <h2>Производители:</h2>
-              <ul>
-                <li>Bosh</li>
-                <li>Интерскол</li>
-                <li>Makita</li>
-                <li>Dewalt</li>
-                <li>Hitachi</li>
-              </ul>
-
-              <h2>Питание:</h2>
-              <ul>
-                <li>Аккумуляторные</li>
-                <li>Сетевые</li>
-              </ul>
-
-              <button type="button">Показать</button> -->
+      <form action="https://echo.htmlacademy.ru" method="get">
+        <fieldset>
+          <legend>Производители:</legend>
+          <ul>
+            <li>
+              <input id="c-Bosh" type="checkbox" name="Bosh" checked="true">
+              <label for="c-Bosh">Bosh</label>
+            </li>
+           <li>
+              <input id="c-interskol" type="checkbox" name="Интерскол" checked="false">
+              <label for="c-interskol">Интерскол</label>
+            </li>
+            <li>
+              <input id="c-Makita" type="checkbox" name="Makita" checked="true">
+              <label for="c-Makita">Makita</label>
+            </li>
+            <li>
+              <input id="c-Dewalt" type="checkbox" name="Dewalt" checked="false">
+              <label for="c-Dewalt">Dewalt</label>
+            </li>
+            <li>
+              <input id="c-Hitachi" type="checkbox" name="Hitachi" checked="false">
+              <label for="c-Hitachi">Hitachi</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Питание:</legend>
+          <ul>
+            <li>
+              <input id="r-Battery" type="radio" name="power-source" value="battery" checked>
+              <label for="r-Battery">Аккумуляторные</label>
+            </li>
+            <li>
+              <input id="r-Power-line" type="radio" name="power-source" value="power-line">
+              <label for="r-Power-line">Сетевые</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button type="submit">Показать</button>
+      </form>
     </aside>
     <section>
       <h2>Каталог перфораторов</h2>
