@@ -9,8 +9,10 @@
 <body>
   <header>
     <a href="index.html">Техномарт</a>
-    <!--Тут будет поиск -->
-    <span>Поиск:</span>
+    <form action="https://echo.htmlacademy.ru" method="get">
+      <label for="search-text">Поиск:</label>
+      <input type="text" id="search-text" name="search-query" value="" placeholder="">
+    </form>
     <a href="">Закладки: 0</a>
     <a href="">Корзина: 0</a>
     <a href="">Оформить заказ</a>
@@ -43,23 +45,47 @@
     <h1>Перфораторы</h1>
     <aside>
       <!-- Блок фильтра по цене -->
-      <!-- Тут будет форма, пока убрал в комментарий
-              <h2>Производители:</h2>
-              <ul>
-                <li>Bosh</li>
-                <li>Интерскол</li>
-                <li>Makita</li>
-                <li>Dewalt</li>
-                <li>Hitachi</li>
-              </ul>
-
-              <h2>Питание:</h2>
-              <ul>
-                <li>Аккумуляторные</li>
-                <li>Сетевые</li>
-              </ul>
-
-              <button type="button">Показать</button> -->
+      <form action="https://echo.htmlacademy.ru" method="get">
+        <fieldset>
+          <legend>Производители:</legend>
+          <ul>
+            <li>
+              <input id="filter-Bosh" type="checkbox" name="Bosh" checked>
+              <label for="filter-Bosh">Bosh</label>
+            </li>
+            <li>
+              <input id="filter-Interskol" type="checkbox" name="Интерскол">
+              <label for="filter-Interskol">Интерскол</label>
+            </li>
+            <li>
+              <input id="filter-Makita" type="checkbox" name="Makita" checked>
+              <label for="filter-Makita">Makita</label>
+            </li>
+            <li>
+              <input id="filter-Dewalt" type="checkbox" name="Dewalt">
+              <label for="filter-Dewalt">Dewalt</label>
+            </li>
+            <li>
+              <input id="filter-Hitachi" type="checkbox" name="Hitachi">
+              <label for="filter-Hitachi">Hitachi</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Питание:</legend>
+          <ul>
+            <li>
+              <input id="filter-Battery" type="radio" name="power-source" value="battery" checked>
+              <label for="filter-Battery">Аккумуляторные</label>
+            </li>
+            <li>
+              <input id="filter-Power-line" type="radio" name="power-source" value="power-line">
+              <label for="filter-Power-line">Сетевые</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button type="submit">Показать</button>
+      </form>
     </aside>
     <section>
       <h2>Каталог перфораторов</h2>
@@ -136,6 +162,13 @@
           </section>
         </li>
       </ul>
+    </section>
+    <!-- Попап подтверждения добавления в корзину -->
+    <section>
+      <h2>Товар добавлен в корзину</h2>
+      <button type="button">Закрыть окно подтверждения</button>
+      <a href="">Оформить заказ</a>
+      <button type="button">Продолжить покупки</button>
     </section>
   </main>
   <footer>
