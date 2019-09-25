@@ -1,0 +1,302 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Cuprum', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background-color: #f1f5f7;
+}
+
+.top-nav {
+  background-color: #161d29;
+}
+
+
+#search-block {
+  color: #ffffff;
+  background-color: #293449;
+  width: 270px;
+  height: 42px;
+}
+
+#search-block::placeholder {
+  color: white;
+}
+
+#search-block:focus {
+  color: black;
+  background-color: #ffffff;
+}
+
+.top-nav a {
+  font-size: 17px;
+  font-family: "Cuprum";
+  color: #ffffff;
+  text-align: left;
+  text-decoration: none;
+}
+
+
+
+.top-logo {
+  background-color: #ee3643;
+}
+
+.top-logo:hover,
+.top-logo:active {
+  background-color: #ca2c37;
+}
+
+.top-nav .submit-order {
+  background-color: #63a63e;
+}
+
+.top-nav .submit-order:hover {
+  background-color: #5fbb2d;
+}
+
+.top-nav .submit-order:focus {
+  background-color: #5fbb2d;
+}
+
+.top-nav .submit-order:active {
+  background-color: #518534;
+  opacity: 0.6;
+}
+
+.top-nav a,
+.top-nav a:hover,
+.top-nav a:focus {
+  color: #ffffff;
+  font-family: Cuprum;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.top-nav a:active {
+  opacity: 0.6;
+}
+
+.store-description {
+  color: #ee3643;
+  font-family: Cuprum;
+  font-size: 16px;
+  font-style: italic;
+  line-height: 23px;
+}
+
+.phone {
+  color: #ee3643;
+  font-family: Cuprum;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.phone:visited {
+  color: #ee3643;
+}
+
+.address {
+  color: #32425c;
+  font-family: Cuprum;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.button {
+  color: #000000;
+  font-family: Cuprum;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 21px;
+  background-color: #ffffff;
+}
+
+.button:hover,
+.button:focus {
+  color: #ee3643;
+}
+
+.button:active {
+  color: #000000;
+  opacity: 0.3;
+}
+
+
+
+.main-navigation {
+  background-color: #32425c;
+}
+
+.main-navigation ul {
+  list-style-type: none;
+}
+
+.main-navigation li {
+  color: #ffffff;
+  font-family: Cuprum;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 17px;
+  display: inline;
+}
+
+.main-navigation li:focus,
+.main-navigation li:hover {
+  background-color: #1d2739;
+}
+
+.main-navigation li:active {
+  opacity: 0.5;
+  background-color: #1d2739;
+}
+
+.main-navigation a:visited {
+  color: #ffffff;
+}
+
+.info h2 {
+  font-family: Cuprum;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.info p {
+  font-family: "PT Sans";
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.info li {
+  font-family: Cuprum;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.button-info {
+  color: #ffffff;
+  font-family: Cuprum;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: #ee3643;
+}
+
+.button-info:hover,
+.button-info:focus {
+  background-color: #ca2c37;
+}
+
+.button-info:active {
+  background-color: #ba2732;
+}
+
+.write-to-us {
+  display: none;
+}
+
+.map-popup {
+  display: none;
+}
+
+.main-footer {
+  background-color: #32425c;
+  color: #f3f7f9;
+}
+
+.logo-footer {}
+
+.main-footer ul {
+  list-style-type: none;
+}
+
+.main-footer li {
+  display: inline;
+  font-family: Cuprum;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.main-footer .company-links {
+  color: #f1f5f7;
+
+}
+
+.main-footer .goods-links {
+  color: #ffd180;
+}
+
+.main-footer .company-links:hover,
+.main-footer .company-links:focus,
+.main-footer .goods-links:hover,
+.main-footer .goods-links:focus {
+  text-decoration: underline;
+}
+
+
+.main-footer .company-links:active,
+.main-footer .goods-links:active {
+  opacity: 0.5;
+}
+
+.footer-bottom {
+  background-color: #293449;
+}
+
+.footer-bottom p {
+  color: #ffffff;
+  font-family: Cuprum;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.footer-bottom .social-icon {
+  background-color: #212a3a;
+}
+
+.footer-bottom .social-icon:hover,
+.footer-bottom .social-icon:focus,
+.footer-bottom .social-icon:active {
+  background-color: #ee3643;
+}
+
+.footer-bottom .company-links {
+  color: #ffd180;
+}
+
+.footer-bottom .company-links:hover,
+.footer-bottom .company-links:focus {
+  text-decoration: underline;
+}
+
+.footer-bottom .company-links:active {
+  color: #ee3643;
+  text-decoration: none;
+}
+
+
+
+
+
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
