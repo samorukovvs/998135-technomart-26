@@ -1,14 +1,14 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Cuprum', sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
 }
 
 a {
   text-decoration: none;
 }
 
-header {
+.header-bottom {
   background-color: #f1f5f7;
 }
 
@@ -16,32 +16,28 @@ header {
   background-color: #161d29;
 }
 
-
-#search-block {
+.top-nav input {
   color: #ffffff;
   background-color: #293449;
   width: 270px;
   height: 42px;
 }
 
-#search-block::placeholder {
+.top-nav input::placeholder {
   color: white;
 }
 
-#search-block:focus {
+.top-nav input:focus {
   color: black;
   background-color: #ffffff;
 }
 
 .top-nav a {
   font-size: 17px;
-  font-family: "Cuprum";
   color: #ffffff;
   text-align: left;
   text-decoration: none;
 }
-
-
 
 .top-logo {
   background-color: #ee3643;
@@ -75,7 +71,6 @@ header {
 
 .user-name {
   color: #000000;
-  font-family: Cuprum;
   font-size: 21px;
   font-weight: 400;
   line-height: 21px;
@@ -87,7 +82,6 @@ header {
 
 .personal-links {
   color: #32425c;
-  font-family: Cuprum;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
@@ -108,7 +102,6 @@ header {
 .top-nav a:hover,
 .top-nav a:focus {
   color: #ffffff;
-  font-family: Cuprum;
   font-size: 17px;
   font-weight: 400;
   line-height: 18px;
@@ -120,7 +113,6 @@ header {
 
 .store-description {
   color: #ee3643;
-  font-family: Cuprum;
   font-size: 16px;
   font-style: italic;
   line-height: 23px;
@@ -128,7 +120,6 @@ header {
 
 .phone {
   color: #ee3643;
-  font-family: Cuprum;
   font-size: 21px;
   font-weight: 400;
   line-height: 21px;
@@ -140,7 +131,6 @@ header {
 
 .address {
   color: #32425c;
-  font-family: Cuprum;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
@@ -148,7 +138,6 @@ header {
 
 .button {
   color: #000000;
-  font-family: Cuprum;
   font-size: 21px;
   font-weight: 400;
   line-height: 21px;
@@ -165,8 +154,6 @@ header {
   opacity: 0.3;
 }
 
-
-
 .main-navigation {
   background-color: #32425c;
 }
@@ -177,11 +164,9 @@ header {
 
 .main-navigation li {
   color: #ffffff;
-  font-family: Cuprum;
   font-size: 17px;
   font-weight: 400;
   line-height: 17px;
-  display: inline;
 }
 
 .main-navigation li:focus,
@@ -199,9 +184,8 @@ header {
 }
 
 .breadcrumbs li {
-  display: inline;
   color: #000000;
-  font-family: "PT Sans";
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   font-weight: 400;
   line-height: 18px;
@@ -222,7 +206,6 @@ h1 {
 }
 
 .info h2 {
-  font-family: Cuprum;
   font-size: 30px;
   font-weight: 400;
   line-height: 30px;
@@ -230,13 +213,12 @@ h1 {
 }
 
 .info p {
-  font-family: "PT Sans";
+  font-family: "PT Sans", Arial, sans-serif;
   font-weight: 400;
   line-height: 24px;
 }
 
 .info li {
-  font-family: Cuprum;
   font-size: 18px;
   font-weight: 400;
   line-height: 20px;
@@ -244,7 +226,6 @@ h1 {
 
 .button-info {
   color: #ffffff;
-  font-family: Cuprum;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -274,15 +255,11 @@ h1 {
   color: #f3f7f9;
 }
 
-.logo-footer {}
-
 .main-footer ul {
   list-style-type: none;
 }
 
 .main-footer li {
-  display: inline;
-  font-family: Cuprum;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
@@ -290,7 +267,6 @@ h1 {
 
 .main-footer .company-links {
   color: #f1f5f7;
-
 }
 
 .main-footer .goods-links {
@@ -304,7 +280,6 @@ h1 {
   text-decoration: underline;
 }
 
-
 .main-footer .company-links:active,
 .main-footer .goods-links:active {
   opacity: 0.5;
@@ -316,7 +291,6 @@ h1 {
 
 .footer-bottom p {
   color: #ffffff;
-  font-family: Cuprum;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
@@ -348,7 +322,7 @@ h1 {
 
 .filter-block legend {
   color: #000000;
-  font-family: "PT Sans";
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 17px;
   font-weight: 700;
   line-height: 30px;
@@ -357,7 +331,7 @@ h1 {
 
 .filter-block li {
   color: #000000;
-  font-family: "PT Sans";
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 15px;
   font-weight: 400;
   line-height: 20px;
@@ -380,7 +354,7 @@ h1 {
 
 .catalog-list h3 {
   color: #000000;
-  font-family: "PT Sans";
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 20px;
@@ -388,7 +362,7 @@ h1 {
 
 .catalog-list del {
   color: #999999;
-  font-family: "PT Sans";
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 17px;
   font-weight: 700;
   line-height: 18px;
@@ -399,7 +373,7 @@ h1 {
 .catalog-list .final-price {
   background-color: #ee3643;
   color: #ffffff;
-  font-family: "PT Sans";
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 17px;
   font-weight: 700;
   line-height: 18px;
@@ -408,7 +382,6 @@ h1 {
 
 .catalog-list .buy-button {
   color: #ffffff;
-  font-family: Cuprum;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -418,7 +391,6 @@ h1 {
 
 .catalog-list .to-bookmarks-button {
   color: #32425c;
-  font-family: Cuprum;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -428,6 +400,7 @@ h1 {
 .added-to-cart-popup {
   display: none;
 }
+
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
