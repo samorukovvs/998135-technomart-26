@@ -34,6 +34,11 @@ a {
   border: none;
 }
 
+.top-nav div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .top-nav input::placeholder {
   color: white;
 }
@@ -43,11 +48,17 @@ a {
   background-color: #ffffff;
 }
 
-.top-nav a {
+.bookmarks a,
+.cart a,
+.submit-order a {
   font-size: 17px;
   color: #ffffff;
   text-align: left;
   text-decoration: none;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 21px;
+  padding-right: 21px;
 }
 
 .top-logo {
@@ -58,6 +69,10 @@ a {
   box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
   background-color: #ee3643;
   position: absolute;
+}
+
+.top-logo a {
+  padding: 0px;
 }
 
 .bottom-logo {
@@ -85,10 +100,6 @@ a {
 
 .top-nav .submit-order {
   background-color: #63a63e;
-  padding-top: 14px;
-  padding-right: 22px;
-  padding-bottom: 13px;
-  padding-left: 20px;
 }
 
 .top-nav .submit-order:hover {
@@ -552,6 +563,28 @@ fieldset {
 
 .main-content {
   margin-top: 20px;
+}
+
+/*.bookmarks {
+  background-image: url('../img/icon-bookmark.png');
+  background-repeat: no-repeat;
+  background-position: 0px 12px;
+}*/
+.bookmarks::before {
+  content: "";
+  width: 14px;
+  background-image: url('../img/icon-bookmark.svg');
+  background-repeat: no-repeat;
+  background-position: 0px 12px;
+  opacity: 0.3;
+}
+
+.bookmarks:hover::before {
+  opacity: 1;
+}
+
+.bookmarks:active::before {
+  opacity: 0.5;
 }
 
 .visually-hidden {
