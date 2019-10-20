@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
-  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700|PT+Sans:400,400i,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i%7CPT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -17,50 +17,33 @@
           <a href="#">
             <img class="logo-img" src="img/top-logo.svg" width="109" height="19" alt="Логотип Техномарт"></a>
         </div>
-        <div class="dummy-top-logo">
-        </div>
-        <form action=" https://echo.htmlacademy.ru" method="get">
+        <form class="top-search" action=" https://echo.htmlacademy.ru" method="get">
           <label class="visually-hidden" for="search-block">Поиск:</label>
-          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17px" height="17px" viewBox="0 0 17 17" enable-background="new 0 0 17 17" xml:space="preserve">
-            <g id="Layer_1">
-            </g>
-            <g id="Layer_2">
-              <path fill="#656d7c" d="M17,15.586l-3.542-3.542C14.421,10.782,15,9.21,15,7.5C15,3.358,11.643,0,7.5,0C3.358,0,0,3.358,0,7.5
-    C0,11.643,3.358,15,7.5,15c1.71,0,3.282-0.579,4.544-1.542L15.586,17L17,15.586z M2,7.5C2,4.467,4.467,2,7.5,2
-    C10.532,2,13,4.467,13,7.5c0,3.032-2.468,5.5-5.5,5.5C4.467,13,2,10.532,2,7.5z" />
-            </g>
-          </svg>
-          <input type="text" id="search-block" name="search-text" value="" placeholder="Поиск:">
+          <input type="text" id="search-block" class="search-field" name="search-text" value="" placeholder="Поиск:">
         </form>
-        <div class="top-nav-buttons">
-          <div class="bookmarks">
-            <a href="">Закладки: 0</a>
-          </div>
-          <div class="cart">
-            <a href="">Корзина: 0</a>
-          </div>
-          <div class="submit-order">
-            <a href=""> Оформить заказ</a>
-          </div>
+        <div class="buttons-block">
+          <a class="bookmarks" href="">Закладки: 0</a>
+          <a class="cart" href="">Корзина: 0</a>
+          <a class="submit-order" href="">Оформить заказ</a>
         </div>
       </div>
     </div>
     <div class="header-bottom">
-      <div class="container space-between">
+      <div class="container">
         <p class="store-description">Интернет-магазин<br>строительных материалов<br>и инструментов для ремонта</p>
         <div class="phone-address">
           <a class="phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
           <p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </div>
         <div class="user-buttons">
-          <a class="button" href="">Войти</a>
-          <a class="button" href="">Регистрация </a>
+          <a class="button sign-in" href="">Войти </a>
+          <a class="button registration" href="">Регистрация </a>
         </div>
       </div>
       <div class="main-navigation container">
         <nav>
           <ul>
-            <li>Главная</li>
+            <li><a href="">Главная</a></li>
             <li><a href="">Компания</a></li>
             <li><a href="catalog.html">Каталог</a></li>
             <li><a href="">Новости</a></li>
@@ -89,24 +72,35 @@
         </ul>
         <a class="button-info" href="">Подробнее о компании</a>
       </section>
-      <section class="info">
+      <section class="info map">
         <h2>Контакты</h2>
-        <p>Вы можете забрать товар сами, заехав в наш офис:</p>
-        <button type="button"><img src="img/map.jpg" width="300" height="158" alt="Карта как добраться"></button>
+        <p>Вы можете забрать товар сами,<br> заехав в наш офис:</p>
+        <button class="mini-map" type="button"><img src="img/map.jpg" width="300" height="158" alt="Карта как добраться"></button>
         <button class="button-info" type="button">Заблудились? Напишите нам!</button>
       </section>
     </div>
     <section class="write-to-us">
+      <div class="top-line"></div>
       <h2 class="visually-hidden">Обратная связь</h2>
-      <button type="button">Закрыть окно обратной связи</button>
+      <button class="close-window" type="button" aria-label="Закрыть окно обратной связи"></button>
       <form action="https://echo.htmlacademy.ru" method="post">
-        <label for="name-field">Ваше имя:</label>
-        <input id="name-field" type="text" name="firtst-second-name" placeholder="Имя Фамилия">
-        <label for="email-field">Ваш e-mail:</label>
-        <input id="email-field" type="email" name="email" placeholder="email@example.com">
-        <label for="message-field">Текст письма:</label>
-        <input id="message-field" type="text" name="message" placeholder="В свободной форме">
-        <button type="submit">Отправить</button>
+        <div class="input-set">
+          <div class="small-set">
+            <label for="name-field">Ваше имя:</label>
+            <input class="popup-input-text" id="name-field" type="text" name="firtst-second-name" placeholder="Имя Фамилия">
+          </div>
+          <div class="small-set">
+            <label for="email-field">Ваш e-mail:</label>
+            <input class="popup-input-text" id="email-field" type="email" name="email" placeholder="email@example.com">
+          </div>
+          <div class="big-set">
+            <label for="message-field">Текст письма:</label>
+            <textarea class="popup-input-text" id="message-field" name="message" placeholder="В свободной форме"></textarea>
+          </div>
+        </div>
+        <div class="button-area">
+          <button class="submit-button" type="submit">Отправить</button>
+        </div>
       </form>
     </section>
     <!-- Попап большой карты проезда -->
@@ -122,9 +116,9 @@
         <div class="footer-left-column">
           <div class="bottom-logo">
             <a href="#">
-              <img class="logo-img" src="img/top-logo.svg" width="138" height="23" alt="Логотип Техномарт"></a>
+              <img class="logo-img" src="img/top-logo.svg" width="138" height="24" alt="Логотип Техномарт"></a>
           </div>
-          <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br> +7 (812) 555-05-55</p>
+          <p class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br> +7 (812) 555-05-55</p>
         </div>
         <div class="footer-right-column">
           <div class="top-links">
