@@ -80,16 +80,27 @@
       </section>
     </div>
     <section class="write-to-us">
+      <div class="top-line"></div>
       <h2 class="visually-hidden">Обратная связь</h2>
-      <button type="button">Закрыть окно обратной связи</button>
+      <button class="close-window" type="button" aria-label="Закрыть окно обратной связи"></button>
       <form action="https://echo.htmlacademy.ru" method="post">
-        <label for="name-field">Ваше имя:</label>
-        <input id="name-field" type="text" name="firtst-second-name" placeholder="Имя Фамилия">
-        <label for="email-field">Ваш e-mail:</label>
-        <input id="email-field" type="email" name="email" placeholder="email@example.com">
-        <label for="message-field">Текст письма:</label>
-        <input id="message-field" type="text" name="message" placeholder="В свободной форме">
-        <button type="submit">Отправить</button>
+        <div class="input-set">
+          <div class="small-set">
+            <label for="name-field">Ваше имя:</label>
+            <input class="popup-input-text" id="name-field" type="text" name="firtst-second-name" placeholder="Имя Фамилия">
+          </div>
+          <div class="small-set">
+            <label for="email-field">Ваш e-mail:</label>
+            <input class="popup-input-text" id="email-field" type="email" name="email" placeholder="email@example.com">
+          </div>
+          <div class="big-set">
+            <label for="message-field">Текст письма:</label>
+            <textarea class="popup-input-text" id="message-field" name="message" placeholder="В свободной форме"></textarea>
+          </div>
+        </div>
+        <div class="button-area">
+          <button class="submit-button" type="submit">Отправить</button>
+        </div>
       </form>
     </section>
     <!-- Попап большой карты проезда -->
