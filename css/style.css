@@ -1344,6 +1344,22 @@ fieldset {
   margin-bottom: 20px;
 }
 
+.promo-slider ul,
+li {
+  padding: 0;
+  margin: 0;
+}
+
+.slider-item {
+  width: 620px;
+  height: 266px;
+}
+
+.drill-slide {
+  background-image: url('../img/drill-slide.jpg');
+  background-repeat: no-repeat;
+}
+
 .promo-slider input::before {
   content: "";
   width: 6px;
