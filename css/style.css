@@ -516,9 +516,8 @@ h1 {
 
 .write-to-us {
   position: absolute;
-  top: 50%;
+  top: 2520px;
   left: 410px;
-  display: none;
   width: 620px;
   min-height: 430px;
   background-color: #fff;
