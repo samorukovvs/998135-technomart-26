@@ -914,6 +914,7 @@ h1 {
 }
 
 .added-to-cart-popup {
+  display: none;
   position: fixed;
   z-index: 1;
   top: 411px;
