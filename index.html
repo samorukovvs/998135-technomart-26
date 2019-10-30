@@ -56,10 +56,150 @@
     </div>
   </header>
   <main>
-    <!-- Тут будут разделы -->
-    <!-- Тут будут популярные товары -->
-    <!-- Тут будут популярные производители -->
-    <!-- Тут будут сервисы -->
+    <section class="promo-block container">
+      <h2 class="visually-hidden">Популярные разделы</h2>
+      <section class="featured-section materials new-section">
+        <h3>Материалы</h3>
+        <a href="#">На любой вкус</a>
+      </section>
+      <section class="featured-section tools">
+        <h3>Инструмент</h3>
+        <a href="#">На все случаи</a>
+      </section>
+      <section class="featured-section machinery">
+        <h3>Техника</h3>
+        <a href="#">Для стройки</a>
+      </section>
+      <section class="promo-slider">
+        <ul>
+          <li class="slider-item">
+            <h3>Дрели</h3>
+            <p>Соседям на радость!</p>
+            <button class="previous-slide" aria-label="Предидущий слайд" type="button"></button>
+            <button class="next-slide" aria-label="Следующий слайд" type="button"></button>
+            <a href="./catalog.html">Открыть каталог</a>
+        </ul>
+        <fieldset>
+          <ul>
+            <li>
+              <input class=" slider-indicator" id="slider-indicator-1" type="radio" name="1" value="1" checked>
+            </li>
+            <li>
+              <input class=" slider-indicator" id="slider-indicator-2" type="radio" name="2" value="2">
+            </li>
+          </ul>
+        </fieldset>
+      </section>
+      <div>
+        <section class="featured-section discount-50">
+          <h3>Скидки 50%</h3>
+          <a href="#">На 350 товаров</a>
+        </section>
+        <section class="featured-section shipment-free">
+          <h3>Доставка</h3>
+          <a href="#">Бесплатно</a>
+        </section>
+      </div>
+    </section>
+    <section class="featured-items container">
+      <div class="section-header-wrapper">
+        <h2>Популярные товары:</h2>
+        <a href="#">Все популярные товары</a>
+      </div>
+      <div class="items-list row-4x">
+        <ul>
+          <li>
+            <section>
+              <img src="img/bosh-bfg-9000.jpg" alt="Перфоратор BOSCH BFG 9000" width="218" height="170">
+              <div class="quick-actions">
+                <a class="buy-button" href="">купить</a>
+                <button class="to-bookmarks-button" type="button">в закладки</button>
+              </div>
+              <h3>Перфоратор BOSCH BFG 9000</h3>
+              <p class="old-price"><del>32500 р.</del></p>
+              <p class="final-price">25500 р.</p>
+            </section>
+          </li>
+          <li>
+            <section>
+              <img src="img/bosh-bfg-3000.jpg" alt="Перфоратор BOSCH BFG 3000" width="218" height="170">
+              <div class="quick-actions">
+                <a class="buy-button" href="">купить</a>
+                <button class="to-bookmarks-button" type="button">в закладки</button>
+              </div>
+              <h3>Перфоратор BOSCH BFG 3000</h3>
+              <p class="old-price"><del>22500 р.</del></p>
+              <p class="final-price">15500 р.</p>
+            </section>
+          </li>
+          <li>
+            <section>
+              <img src="img/bosh-bfg-6000.jpg" alt="Перфоратор BOSCH BFG 6000" width="218" height="170">
+              <div class="quick-actions">
+                <a class="buy-button" href="">купить</a>
+                <button class="to-bookmarks-button" type="button">в закладки</button>
+              </div>
+              <h3>Перфоратор BOSCH BFG 6000</h3>
+              <p class="old-price"><del>30500 р.</del></p>
+              <p class="final-price">25500 р.</p>
+            </section>
+          </li>
+          <li class="new">
+            <section>
+              <img src="img/bosh-bfg-2000.jpg" alt="Перфоратор BOSCH BFG 2000" width="218" height="170">
+              <div class="quick-actions">
+                <a class="buy-button" href="">купить</a>
+                <button class="to-bookmarks-button" type="button">в закладки</button>
+              </div>
+              <h3>Перфоратор BOSCH BFG 2000</h3>
+              <p class="old-price"></p>
+              <p class="final-price">12500 р.</p>
+            </section>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="featured-manufactures container">
+      <div class="section-header-wrapper">
+        <h2>Популярные производители:</h2>
+        <a href="#">Все производители</a>
+      </div>
+      <ul>
+        <li><a href="#"></a><img src="img/bosch.png" alt="Bosch" width="126" height="37"></li>
+        <li><a href="#"></a><img src="img/makita.png" alt="Makita" width="123" height="40"></li>
+        <li><a href="#"></a><img src="img/dewalt.png" alt="Dewalt" width="146" height="44"></li>
+        <li><a href="#"></a><img class="interskol" src="img/interskol.png" alt="Интерскол" width="200" height="88"></li>
+        <li><a href="#"></a><img src="img/hitachi.png" alt="Hitachi" width="169" height="31"></li>
+        <li><a href="#"></a><img src="img/lg.png" alt="LG" width="121" height="73"></li>
+        <li><a href="#"></a><img src="img/aeg.png" alt="AEG" width="151" height="96"></li>
+        <li><a href="#"></a><img class="metabo" src="img/metabo.png" alt="Metabo" width="204" height="69"></li>
+      </ul>
+    </section>
+    <div class="services-wrapper">
+      <section class="services container">
+        <h2>Сервисы</h2>
+        <p class="service-description">Хороший интернет-магазин отличается от плохого не только ценами!<br> Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+        <section class="services-slider">
+          <div class="services-buttons">
+            <p class="service-button">Доставка</p>
+            <p class="service-button">Гарантия</p>
+            <p class="service-button">Кредит</p>
+          </div>
+          <div class="service-summary">
+            <ul>
+              <li class="services-shipment-slide">
+                <h3>Доставка</h3>
+                <p>Мы с удовольствием доставим ваш товар прямо<br>к вашему подъезду совершенно бесплатно!<br> Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!</p>
+              </li>
+              <li class="services-warrenty-slide">
+                <h3>Гарантия</h3>
+                <p>Если купленный у нас товар поломается или заискрит,<br> а также в случае пожара, спровоцированного его возгоранием,<br> вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br> сгоревший товар на новый.<br> Дом уж восстановите как-нибудь сами.</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </section>
+    </div>
     <div class="shipment-contacts container">
       <section class="info">
         <h2>Компания «Техномарт»</h2>
