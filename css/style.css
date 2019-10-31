@@ -1357,7 +1357,13 @@ li {
 }
 
 .drill-slide {
+  display: none;
   background-image: url('../img/drill-slide.jpg');
+  background-repeat: no-repeat;
+}
+
+.perf-slide {
+  background-image: url('../img/perf-slide.jpg');
   background-repeat: no-repeat;
 }
 
