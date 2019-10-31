@@ -514,11 +514,16 @@ h1 {
 }
 
 .button-info:hover,
-.button-info:focus {
+.button-info:focus,
+.slider-item a:hover,
+.slider-item a:focus,
+.section-header-wrapper a:hover,
+.section-header-wrapper a:focus {
   background-color: #ca2c37;
 }
 
-.button-info:active {
+.button-info:active,
+.slider-item a:active {
   background-color: #ba2732;
 }
 
@@ -918,6 +923,15 @@ h1 {
   box-shadow: inset 0 -3px 0 #367315;
 }
 
+.items-list .buy-button:hover,
+.items-list .buy-button:focus {
+  background-color: #5fbb2d;
+}
+
+.items-list .buy-button:active {
+  background-color: #518534;
+}
+
 .items-list .to-bookmarks-button {
   font-size: 14px;
   font-weight: 400;
@@ -934,6 +948,15 @@ h1 {
   border: 3px solid #63a63e;
   border-radius: 3px;
   background-color: transparent;
+}
+
+.items-list .to-bookmarks-button:hover,
+.items-list .to-bookmarks-button:focus {
+  border: 3px solid #32425c;
+}
+
+.items-list .to-bookmarks-button:active {
+  border: 3px solid rgba(50, 66, 92, 0.3);
 }
 
 .added-to-cart-popup {
@@ -1564,6 +1587,11 @@ li {
   background-color: #ffffff;
   margin-right: 20px;
   margin-bottom: 20px;
+}
+
+.featured-manufactures li:hover,
+.featured-manufactures li:focus {
+  box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
 }
 
 .featured-manufactures img {
