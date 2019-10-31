@@ -499,6 +499,14 @@ h1 {
   background-color: #ee3643;
 }
 
+.credit {
+  display: inline-block;
+  width: auto;
+  padding-left: 45px;
+  padding-right: 44px;
+  margin-top: 13px;
+}
+
 .map .button-info {
   width: 100%;
   margin-top: 35px;
@@ -515,6 +523,7 @@ h1 {
 }
 
 .write-to-us {
+  display: none;
   position: absolute;
   top: 2520px;
   left: 410px;
@@ -1367,6 +1376,32 @@ li {
   background-repeat: no-repeat;
 }
 
+.slider-indicator {
+  position: relative;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  top: -50px;
+  left: -283px;
+  margin-right: 11px;
+  background-color: #ffffff;
+}
+
+.slider-indicator.active::before {
+  content: "";
+  position: absolute;
+  top: ;
+  width: 6px;
+  height: 6px;
+  margin: -4px;
+  background-color: #ee3643;
+  border-radius: 50%;
+  left: 6px;
+  top: 6px;
+}
+
 .promo-slider input::before {
   content: "";
   width: 6px;
@@ -1555,7 +1590,7 @@ li {
   font-size: 13px;
   margin-top: 0;
   margin-left: 1px;
-  margin-bottom: 73px;
+  margin-bottom: 71px;
 }
 
 .services-slider {
@@ -1594,7 +1629,7 @@ li {
   font-weight: 400;
   line-height: 36px;
   text-transform: uppercase;
-  margin-top: -5px;
+  margin-top: -3px;
   margin-left: -1px;
   margin-bottom: 25px;
 }
@@ -1611,7 +1646,7 @@ li {
   line-height: 24px;
 }
 
-.services-buttons p {
+.service-button {
   box-sizing: border-box;
   width: 240px;
   min-height: 61px;
@@ -1621,12 +1656,19 @@ li {
   font-size: 21px;
   font-weight: 700;
   line-height: 30px;
-  padding-top: 11px;
-  padding-left: 23px;
+  padding-top: 0px;
+  padding-left: 22px;
+  text-align: left;
   margin: 0;
+  border: 0;
 }
 
-.service-button:hover .service-button {
+.service-button:hover,
+.service-button:focus {
+  background-color: #293449;
+}
+
+.service-button:active {
   background-color: #ffffff;
   color: #32425c;
 }
@@ -1643,9 +1685,16 @@ li {
 }
 
 .services-warrenty-slide {
+  display: none;
   background-image: url('../img/medal-389x283.png');
   background-repeat: no-repeat;
-  background-position: 240px 6px;
+  background-position: 239px 3px;
+}
+
+.services-credit-slide {
+  background-image: url('../img/finances-465x285.png');
+  background-repeat: no-repeat;
+  background-position: 166px 0px;
 }
 
 .visually-hidden {
