@@ -612,7 +612,21 @@ h1 {
 }
 
 .map-popup {
-  display: none;
+  position: absolute;
+  top: 2333px;
+  left: 235px;
+}
+
+.close-map-button {
+  height: 21px;
+  width: 21px;
+  background-color: transparent;
+  border: none;
+  background-image: url('../img/close-button.png');
+  background-repeat: no-repeat;
+  position: relative;
+  top: -433px;
+  left: -49px;
 }
 
 .main-footer {
