@@ -780,6 +780,7 @@ h1 {
   text-transform: uppercase;
   color: #000;
   flex-wrap: wrap;
+  align-content: flex-start;
 }
 
 .filter-block ul {
@@ -814,7 +815,8 @@ h1 {
   font-size: 13px;
   font-weight: 400;
   line-height: 18px;
-  margin-top: 38px;
+  padding-top: 3px;
+  margin-top: 57px;
 }
 
 .items-list ul {
@@ -1196,8 +1198,8 @@ h1 {
 
 main h1 {
   box-sizing: border-box;
-  padding-top: 32px;
-  padding-bottom: 34px;
+  padding-top: 31px;
+  padding-bottom: 26px;
   padding-left: 30px;
 }
 
@@ -1737,6 +1739,115 @@ li {
   background-image: url('../img/finances-465x285.png');
   background-repeat: no-repeat;
   background-position: 166px 0px;
+}
+
+.filter-sorting-header {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  width: 940px;
+}
+
+.filter-header {
+  width: 220px;
+  min-height: 38px;
+  box-sizing: border-box;
+  background-color: #f7f3ec;
+  color: #000000;
+  font-family: "PT Sans";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding-left: 19px;
+  padding-top: 12px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+
+.price-filter-fieldset {
+  margin-top: -7px;
+}
+
+.price-range-slider {
+  position: relative;
+  background-color: #f7f3ec;
+  box-sizing: border-box;
+  width: 220px;
+  min-height: 80px;
+  margin-top: 13px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: none;
+}
+
+.price-slider-input-field {
+  background-color: #f7f3ec;
+  box-sizing: border-box;
+  width: 95px;
+  min-height: 38px;
+  border-radius: 4px;
+  border-width: 0px;
+  text-align: center;
+  color: #000000;
+  font-family: "PT Sans";
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 18px;
+  padding-left: 5px;
+  margin-bottom: 22px;
+}
+
+.pirce-separator {
+  color: #444444;
+  font-family: "PT Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+.price-min-slider {
+  position: absolute;
+  top: 31px;
+  left: 20px;
+  width: 20px;
+  height: 22px;
+  background-image: url('../img/filter-button.svg');
+  background-repeat: no-repeat;
+}
+
+.price-max-slider {
+  position: absolute;
+  top: 31px;
+  left: 160px;
+  width: 20px;
+  height: 22px;
+  background-image: url('../img/filter-button.svg');
+  background-repeat: no-repeat;
+}
+
+.active-price {
+  position: absolute;
+  box-sizing: border-box;
+  width: 152px;
+  height: 2px;
+  background-color: #00ca74;
+  top: 40px;
+  left: 22px;
+}
+
+.incative-price {
+  position: absolute;
+  box-sizing: border-box;
+  width: 180px;
+  height: 2px;
+  background-color: #d7dcde;
+  top: 40px;
+  left: 22px;
 }
 
 .visually-hidden {

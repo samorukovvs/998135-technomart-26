@@ -74,7 +74,20 @@
     <div class="main-content container">
       <aside class="filter-block">
         <!-- Блок фильтра по цене -->
+        <h3 class="filter-header">Фильтр:</h3>
         <form action="https://echo.htmlacademy.ru" method="get">
+          <fieldset class="price-filter-fieldset">
+            <legend>Цена:</legend>
+            <div class="price-range-slider">
+              <div class="incative-price"></div>
+              <div class="active-price"></div>
+              <div class="price-min-slider"></div>
+              <div class="price-max-slider"></div>
+            </div>
+            <input class="price-slider-input-field" type="text" id="min-price" placeholder="0">
+            <span class=pirce-separator>—</span>
+            <input class="price-slider-input-field" type="text" id="max-price" placeholder="30000">
+          </fieldset>
           <div class="separator">
             <fieldset>
               <legend>Производители:</legend>
