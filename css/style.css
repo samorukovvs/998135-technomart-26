@@ -546,7 +546,7 @@ h1 {
 }
 
 .write-to-us input {
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', Arial, sans-serif;
   font-size: 13px;
   font-weight: 400;
   line-height: 18px;
@@ -582,7 +582,7 @@ h1 {
 }
 
 .big-set textarea {
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', Arial, sans-serif;
   font-size: 13px;
   font-weight: 400;
   line-height: 18px;
@@ -617,6 +617,7 @@ h1 {
 }
 
 .map-popup {
+  display: none;
   position: absolute;
   top: 2333px;
   left: 235px;
@@ -735,8 +736,16 @@ h1 {
   justify-content: center;
 }
 
-.social-icon img {
-  margin: auto;
+.vk-social {
+  padding-top: 14px;
+}
+
+.facebook-social {
+  padding-top: 11px;
+}
+
+.insta-social {
+  padding-top: 11px;
 }
 
 .footer-bottom .social-icon:hover,
@@ -811,7 +820,7 @@ h1 {
   border: 1px solid #e5e5e5;
   background-color: #ffffff;
   text-transform: uppercase;
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', Arial, sans-serif;
   font-size: 13px;
   font-weight: 400;
   line-height: 18px;
@@ -967,11 +976,9 @@ h1 {
 
 .added-to-cart-popup {
   display: none;
-  position: fixed;
-  z-index: 1;
+  position: absolute;
   top: 411px;
-  left: 266px;
-  display: none;
+  left: 410px;
   width: 620px;
   min-height: 82px;
   box-shadow: 0 20px 40px rgba(41, 52, 73, .75);
@@ -985,6 +992,7 @@ h1 {
   height: 21px;
   cursor: pointer;
   border: none;
+  background-color: #ffffff;
   background-image: url('../img/close-button.png');
   background-repeat: no-repeat;
 }
@@ -1215,9 +1223,13 @@ input:disabled+label {
   margin-right: 0px;
 }
 
+.items-list.row-4x ul {
+  margin-bottom: 0px;
+}
+
 .new::before {
   position: absolute;
-  left: 159px;
+  right: 0px;
   width: 60px;
   height: 59px;
   content: '';
@@ -1322,7 +1334,6 @@ main h1 {
   margin-left: 2px;
 }
 
-/* Избранные категории главной */
 .promo-block {
   display: flex;
   flex-wrap: wrap;
@@ -1659,7 +1670,7 @@ li {
 }
 
 .service-description {
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', Arial, sans-serif;
   font-weight: 400;
   line-height: 24px;
   font-size: 13px;
@@ -1715,7 +1726,7 @@ li {
 }
 
 .service-summary p {
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', Arial, sans-serif;
   font-weight: 400;
   font-size: 13px;
   line-height: 24px;
@@ -1785,8 +1796,7 @@ li {
   box-sizing: border-box;
   background-color: #f7f3ec;
   color: #000000;
-  font-family: 'PT Sans';
-  font-size: 13px;
+  font-family: 'PT Sans', Arial, sans-serif;
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
@@ -1822,7 +1832,7 @@ li {
   border-width: 0px;
   text-align: center;
   color: #000000;
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', Arial, sans-serif;
   font-size: 17px;
   font-weight: 400;
   line-height: 18px;
@@ -1832,7 +1842,7 @@ li {
 
 .pirce-separator {
   color: #444444;
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
@@ -1894,7 +1904,7 @@ li {
 
 .catalog-sorting-block h3 {
   color: #000000;
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', Arial, sans-serif;
   font-size: 13px;
   font-weight: 400;
   line-height: 18px;
@@ -1932,7 +1942,7 @@ li {
   margin-top: 12px;
   opacity: 0.3;
   color: #000000;
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', Arial, sans-serif;
   font-size: 13px;
   font-weight: 400;
   line-height: 18px;
@@ -2016,7 +2026,7 @@ li {
   color: #000000;
   margin-left: 10px;
   margin-right: 0;
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', Arial, sans-serif;
   font-size: 13px;
   font-weight: 400;
   line-height: 18px;
@@ -2056,8 +2066,6 @@ li {
 .category-description-wrapper {
   background-color: #f2f6f8;
   margin-top: 6px;
-  /*
-  */
   margin-bottom: -90px;
 }
 
@@ -2069,7 +2077,7 @@ li {
 }
 
 .category-description h3 {
-  font-family: Cuprum;
+  font-family: 'Cuprum', Arial, sans-serif;
   font-size: 30px;
   font-weight: 400;
   line-height: 30px;
@@ -2080,7 +2088,7 @@ li {
 
 .category-description p {
   color: #000000;
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', Arial, sans-serif;
   font-size: 13px;
   font-weight: 400;
   line-height: 23px;
