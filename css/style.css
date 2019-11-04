@@ -1118,6 +1118,10 @@ h1 {
   padding-top: 15px;
 }
 
+input:disabled+label {
+  opacity: 0.3;
+}
+
 .filter-checkbox+label {
   position: relative;
 }
@@ -1132,6 +1136,10 @@ h1 {
   background-image: url('../img/checkbox-off.svg');
 }
 
+.filter-checkbox+label:hover::before {
+  background-image: url('../img/checkbox-off-hover.svg');
+}
+
 .filter-checkbox:checked+label::before {
   position: absolute;
   top: -1px;
@@ -1140,6 +1148,10 @@ h1 {
   height: 23px;
   content: '';
   background-image: url('../img/checkbox-on.svg');
+}
+
+.filter-checkbox:checked+label:hover::before {
+  background-image: url('../img/checkbox-on-hover.svg');
 }
 
 .filter-radio+label {
@@ -1156,14 +1168,22 @@ h1 {
   background-image: url('../img/radio-off.svg');
 }
 
+.filter-radio+label:hover::before {
+  background-image: url('../img/radio-off-hover.svg');
+}
+
 .filter-radio:checked+label::before {
   position: absolute;
-  top: -3px;
+  top: -2px;
   left: -35px;
   width: 25px;
   height: 25px;
   content: '';
   background-image: url('../img/radio-on.svg');
+}
+
+.filter-radio:checked+label:hover::before {
+  background-image: url('../img/radio-on-hover.svg');
 }
 
 .quick-actions {
@@ -1172,6 +1192,11 @@ h1 {
 
 .items-list li:hover .quick-actions {
   display: block;
+}
+
+.items-list li:hover {
+  box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
+  border: none;
 }
 
 .items-list li:hover img {
@@ -1207,7 +1232,7 @@ main h1 {
   padding-left: 30px;
 }
 
-fieldset {
+.main-content fieldset {
   margin: 0;
   padding: 0;
 }
@@ -1435,7 +1460,7 @@ li {
 }
 
 .slider-indicator.active::before {
-  content: "";
+  content: '';
   position: absolute;
   top: ;
   width: 6px;
@@ -1448,7 +1473,7 @@ li {
 }
 
 .promo-slider input::before {
-  content: "";
+  content: '';
   width: 6px;
   height: 6px;
   background-color: #000000;
@@ -1663,7 +1688,7 @@ li {
 }
 
 .services-buttons::after {
-  content: "";
+  content: '';
   width: 10px;
   height: 272px;
   position: absolute;
@@ -1690,7 +1715,7 @@ li {
 }
 
 .service-summary p {
-  font-family: "PT Sans";
+  font-family: 'PT Sans';
   font-weight: 400;
   font-size: 13px;
   line-height: 24px;
@@ -1760,7 +1785,7 @@ li {
   box-sizing: border-box;
   background-color: #f7f3ec;
   color: #000000;
-  font-family: "PT Sans";
+  font-family: 'PT Sans';
   font-size: 13px;
   font-weight: 400;
   line-height: 18px;
@@ -1797,7 +1822,7 @@ li {
   border-width: 0px;
   text-align: center;
   color: #000000;
-  font-family: "PT Sans";
+  font-family: 'PT Sans';
   font-size: 17px;
   font-weight: 400;
   line-height: 18px;
@@ -1807,7 +1832,7 @@ li {
 
 .pirce-separator {
   color: #444444;
-  font-family: "PT Sans";
+  font-family: 'PT Sans';
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
@@ -1869,7 +1894,7 @@ li {
 
 .catalog-sorting-block h3 {
   color: #000000;
-  font-family: "PT Sans";
+  font-family: 'PT Sans';
   font-size: 13px;
   font-weight: 400;
   line-height: 18px;
@@ -1907,7 +1932,7 @@ li {
   margin-top: 12px;
   opacity: 0.3;
   color: #000000;
-  font-family: "PT Sans";
+  font-family: 'PT Sans';
   font-size: 13px;
   font-weight: 400;
   line-height: 18px;
@@ -1991,12 +2016,33 @@ li {
   color: #000000;
   margin-left: 10px;
   margin-right: 0;
-  font-family: "PT Sans";
+  font-family: 'PT Sans';
   font-size: 13px;
   font-weight: 400;
   line-height: 18px;
   padding-top: 9px;
   text-transform: uppercase;
+  border-radius: 3px;
+}
+
+.catalog-pagination li:hover,
+.catalog-pagination li:focus {
+  box-shadow: none;
+  border: 1px solid #bdc6ca;
+}
+
+.pagination-item.active-pagination {
+  background-color: #ee3643;
+  border: none;
+}
+
+.pagination-item.active-pagination:hover {
+  border: none;
+}
+
+.catalog-pagination li:active {
+  box-shadow: none;
+  border: 1px solid #ee3643;
 }
 
 .catalog-pagination li:first-child {
@@ -2034,7 +2080,7 @@ li {
 
 .category-description p {
   color: #000000;
-  font-family: "PT Sans";
+  font-family: 'PT Sans';
   font-size: 13px;
   font-weight: 400;
   line-height: 23px;
