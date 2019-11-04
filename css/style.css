@@ -822,7 +822,10 @@ h1 {
 .items-list ul {
   display: flex;
   padding: 0;
-  margin: 0;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 33px;
   list-style-type: none;
   flex-wrap: wrap;
 }
@@ -839,6 +842,7 @@ h1 {
 
 .items-list {
   display: flex;
+  flex-wrap: wrap;
   width: 700px;
   text-align: center;
 }
@@ -1209,7 +1213,8 @@ fieldset {
 }
 
 .main-content {
-  margin-top: 20px;
+  margin-top: 21px;
+  flex-wrap: wrap;
 }
 
 .bookmarks,
@@ -1849,6 +1854,120 @@ li {
   top: 40px;
   left: 22px;
 }
+
+.catalog-sorting-block {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f7f3ec;
+  min-height: 38px;
+  width: 700px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.catalog-sorting-block h3 {
+  color: #000000;
+  font-family: "PT Sans";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding-top: 6px;
+  padding-left: 19px;
+}
+
+.sorting-buttons {
+  display: flex;
+  flex-direction: row;
+  margin-right: 11px;
+}
+
+.sorting-order {
+  position: relative;
+  width: 43px;
+  margin-right: 17px
+}
+
+.function-sort {
+  margin-right: 35px;
+}
+
+.type-sort {
+  margin-right: 66px;
+}
+
+.price-sort {
+  margin-right: 70px;
+}
+
+.sort-type-button {
+  opacity: 0.3;
+  color: #000000;
+  font-family: "PT Sans";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: #f7f3ec;
+  border: none;
+  padding: 0;
+}
+
+.sort-up {
+  position: absolute;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  width: 0px;
+  height: 0px;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 11px solid #ee3643;
+  margin-right: 21px;
+  top: 14px;
+  left: 11px;
+}
+
+.sort-down {
+  position: absolute;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  width: 0px;
+  height: 0px;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 11px solid #ee3643;
+  top: 15px;
+  left: 44px;
+}
+
+.catalog-pagination li {
+  width: 38px;
+  min-height: 38px;
+  border: 1px solid #e5e5e5;
+  background-color: #ffffff;
+  color: #000000;
+  margin-left: 10px;
+  margin-right: 0;
+  font-family: "PT Sans";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  padding-top: 9px;
+  text-transform: uppercase;
+}
+
+.catalog-pagination li:first-child {
+  margin-left: 0px;
+}
+
+.pagination-item.next-page-pagination {
+  width: 140px;
+}
+
+.category-description h3 {}
 
 .visually-hidden {
   position: absolute;
