@@ -1215,10 +1215,7 @@ fieldset {
 .main-content {
   margin-top: 21px;
   flex-wrap: wrap;
-<<<<<<< HEAD
   align-items: flex-start;
-=======
->>>>>>> 337a75fc038aee4454ad61a3dd4963123ce12a84
 }
 
 .bookmarks,
@@ -1971,7 +1968,6 @@ li {
   width: 140px;
 }
 
-<<<<<<< HEAD
 .category-description-wrapper {
   background-color: #f2f6f8;
   margin-top: 6px;
@@ -2007,9 +2003,6 @@ li {
   padding: 0;
   letter-spacing: 0.012em;
 }
-=======
-.category-description h3 {}
->>>>>>> 337a75fc038aee4454ad61a3dd4963123ce12a84
 
 .visually-hidden {
   position: absolute;
