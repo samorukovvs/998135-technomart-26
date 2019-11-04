@@ -74,7 +74,20 @@
     <div class="main-content container">
       <aside class="filter-block">
         <!-- Блок фильтра по цене -->
+        <h3 class="filter-header">Фильтр:</h3>
         <form action="https://echo.htmlacademy.ru" method="get">
+          <fieldset class="price-filter-fieldset">
+            <legend>Цена:</legend>
+            <div class="price-range-slider">
+              <div class="incative-price"></div>
+              <div class="active-price"></div>
+              <div class="price-min-slider"></div>
+              <div class="price-max-slider"></div>
+            </div>
+            <input class="price-slider-input-field" type="text" id="min-price" placeholder="0">
+            <span class=pirce-separator>—</span>
+            <input class="price-slider-input-field" type="text" id="max-price" placeholder="30000">
+          </fieldset>
           <div class="separator">
             <fieldset>
               <legend>Производители:</legend>
@@ -122,6 +135,18 @@
       </aside>
       <section class="items-list">
         <h2 class="visually-hidden">Каталог перфораторов</h2>
+        <section class="catalog-sorting-block">
+          <h3>Сортировка:</h3>
+          <div class="sorting-buttons">
+            <button class="sort-type-button price-sort" type="button">По цене</button>
+            <button class="sort-type-button type-sort" type="button">По типу</button>
+            <button class="sort-type-button function-sort" type="button">По функционалу</button>
+            <div class="sorting-order">
+              <button class="sort-up" aria-label="По возрастанию"></button>
+              <button class="sort-down" aria-label="По убыванию"></button>
+            </div>
+          </div>
+        </section>
         <ul>
           <li>
             <section>
@@ -232,18 +257,18 @@
             </section>
           </li>
         </ul>
+        <ul class="catalog-pagination">
+          <li class="pagination-item active-pagination">1</li>
+          <li class="pagination-item">2</li>
+          <li class="pagination-item">3</li>
+          <li class="pagination-item next-page-pagination">Следующая</li>
+        </ul>
       </section> <!-- items-list-->
-      <!-- Попап подтверждения добавления в корзину -->
-      <section class="added-to-cart-popup">
-        <div class="top-line"></div>
-        <div class="added-message">
-          <h2>Товар добавлен в корзину!</h2>
-          <button class="close-window" type="button" aria-label="Закрыть окно подтверждения"></button>
-        </div>
-        <div class="button-area">
-          <a class="checkout-button" href="">Оформить заказ</a>
-          <button class="continue-shopping" type="button">Продолжить покупки</button>
-        </div>
+    </div>
+    <div class="category-description-wrapper">
+      <section class="category-description container">
+        <h3>Пара слов о перфораторах</h3>
+        <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br> Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В<br>ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
       </section>
     </div>
   </main>
@@ -294,6 +319,18 @@
       </div>
     </div>
   </footer>
+  <!-- Попап подтверждения добавления в корзину -->
+  <section class="added-to-cart-popup">
+    <div class="top-line"></div>
+    <div class="added-message">
+      <h2>Товар добавлен в корзину!</h2>
+      <button class="close-window" type="button" aria-label="Закрыть окно подтверждения"></button>
+    </div>
+    <div class="button-area">
+      <a class="checkout-button" href="">Оформить заказ</a>
+      <button class="continue-shopping" type="button">Продолжить покупки</button>
+    </div>
+  </section>
 </body>
 
 </html>
