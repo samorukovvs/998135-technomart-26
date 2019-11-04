@@ -1903,6 +1903,8 @@ li {
 }
 
 .sort-type-button {
+  height: 16px;
+  margin-top: 12px;
   opacity: 0.3;
   color: #000000;
   font-family: "PT Sans";
@@ -1912,7 +1914,22 @@ li {
   text-transform: uppercase;
   background-color: #f7f3ec;
   border: none;
+  border-bottom: 1px dotted #ee3643;
   padding: 0;
+}
+
+.sort-type-button:active {
+  color: #ee3643;
+  opacity: 1;
+}
+
+.sort-type-button:hover,
+.sort-type-button:focus {
+  color: #ee3643;
+  opacity: 1;
+  color: #000000;
+  border-bottom: 1px solid #ee3643;
+  padding-bottom: 1px;
 }
 
 .sort-up {
@@ -1924,10 +1941,11 @@ li {
   height: 0px;
   border-left: 6px solid transparent;
   border-right: 6px solid transparent;
-  border-bottom: 11px solid #ee3643;
+  border-bottom: 11px solid #000000;
   margin-right: 21px;
   top: 14px;
   left: 11px;
+  opacity: 0.3;
 }
 
 .sort-down {
@@ -1939,9 +1957,30 @@ li {
   height: 0px;
   border-left: 6px solid transparent;
   border-right: 6px solid transparent;
-  border-top: 11px solid #ee3643;
+  border-top: 11px solid #000000;
   top: 15px;
   left: 44px;
+  opacity: 0.3;
+}
+
+.sort-down:hover,
+.sort-down:focus {
+  opacity: 1;
+}
+
+.sort-down:active {
+  border-top: 11px solid #ee3643;
+  opacity: 1;
+}
+
+.sort-up:hover,
+.sort-up:focus {
+  opacity: 1;
+}
+
+.sort-up:active {
+  border-bottom: 11px solid #ee3643;
+  opacity: 1;
 }
 
 .catalog-pagination li {
