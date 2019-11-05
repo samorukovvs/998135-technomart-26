@@ -483,6 +483,7 @@ h1 {
 
 .info .how-to-pickup {
   margin-bottom: 33px;
+  width: 180px;
 }
 
 .info li {
@@ -522,6 +523,7 @@ h1 {
 
 .credit {
   display: inline-block;
+  vertical-align: baseline;
   width: auto;
   padding-left: 45px;
   padding-right: 44px;
@@ -921,6 +923,7 @@ h1 {
   font-weight: 700;
   line-height: 18px;
   display: inline-block;
+  vertical-align: baseline;
   width: 148px;
   height: 38px;
   margin-top: 8px;
@@ -1103,11 +1106,12 @@ h1 {
 
 .contact-block {
   display: flex;
-  margin-right: 14px;
+  margin-right: -23px;
 }
 
 .contact-block p {
   margin-left: 52px;
+  width: 135px;
 }
 
 .shipment-contacts {
@@ -1496,6 +1500,7 @@ main h1 {
 .slider-indicator {
   position: relative;
   display: inline-block;
+  vertical-align: baseline;
   width: 10px;
   height: 10px;
   border-radius: 50%;
@@ -1770,11 +1775,12 @@ main h1 {
 }
 
 .service-button {
+  position: relative;
   box-sizing: border-box;
   width: 240px;
   min-height: 61px;
-  box-shadow: 0 1px 0 #293449, inset 0 1px 0 #405069;
   background-color: #32425c;
+  border: none;
   color: #ffffff;
   font-size: 21px;
   font-weight: 700;
@@ -1786,12 +1792,24 @@ main h1 {
   border: 0;
 }
 
+.service-button::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 240px;
+  height: 1px;
+  background-color: #2b364a;
+  border-bottom: 1px solid #405069;
+}
+
 .service-button:hover,
 .service-button:focus {
   background-color: #293449;
 }
 
-.service-button:active {
+.service-button:active,
+.services-slider .active-service-button {
   background-color: #ffffff;
   color: #32425c;
 }
@@ -2150,6 +2168,10 @@ main h1 {
 
 .powersource {
   margin-top: 2px;
+}
+
+.info .short-paragraph {
+  width: 385px;
 }
 
 .visually-hidden {
